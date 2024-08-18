@@ -23,7 +23,7 @@ class AddBook(Toplevel):
     self.bottomFrame.pack(fill=X)
     
     #heading,image
-    self.top_image=PhotoImage(file='icons/code/addbook.png')
+    self.top_image=PhotoImage(file='icons/addbook.png')
     top_imag_lbl=Label(self.topFrame,image=self.top_image,bg='white')
     top_imag_lbl.place(x=120,y=10)
     heading = Label(self.topFrame,text=' Add Book ',font='arial 22 bold',fg='#003f8a',bg='white')

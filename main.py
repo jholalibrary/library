@@ -129,7 +129,7 @@ class Main:
         self.title_right = Label(image_bar, text='Welcome to Library', font='arial 14 bold')
         self.title_right.grid(row=0, pady=(10, 0))
 
-        self.image_library = Image.open('icons/code/Untitled.png')
+        self.image_library = Image.open('icons/Untitled.png')
         self.image_library = self.image_library.resize((390, 200), Image.LANCZOS)
         self.image_library = ImageTk.PhotoImage(self.image_library)
 
@@ -140,9 +140,9 @@ class Main:
         ##TAB--1
         self.tabs = ttk.Notebook(centerLeftFrame, width=600, height=600)
         self.tabs.pack()
-        self.tab1_icon = Image.open('icons/code/Books.png').resize((30, 30), Image.LANCZOS)
+        self.tab1_icon = Image.open('icons/Books.png').resize((30, 30), Image.LANCZOS)
         self.tab1_icon = ImageTk.PhotoImage(self.tab1_icon)
-        self.tab2_icon = Image.open('icons/code/statistic.png').resize((30, 30), Image.LANCZOS)
+        self.tab2_icon = Image.open('icons/statistic.png').resize((30, 30), Image.LANCZOS)
         self.tab2_icon = ImageTk.PhotoImage(self.tab2_icon)
         self.tab1 = ttk.Frame(self.tabs)
         self.tab2 = ttk.Frame(self.tabs)
@@ -174,7 +174,7 @@ class Main:
         self.lbl_taken_count.grid(row=2, sticky=W)
 
         # Add Book
-        self.iconbook = Image.open('icons/code/addbook.png').resize(icon_size, Image.LANCZOS)
+        self.iconbook = Image.open('icons/addbook.png').resize(icon_size, Image.LANCZOS)
         self.iconbook = ImageTk.PhotoImage(self.iconbook)
 
         self.btnbook = Button(topFrame, text='Add Book', image=self.iconbook, compound=LEFT, font='Arial 12 bold', command=self.addBook)
@@ -188,7 +188,7 @@ class Main:
         self.btnAddMember.pack(side=LEFT)
 
         # Book Given
-        self.iconLendbook = Image.open('icons/code/givebook.png').resize(icon_size, Image.LANCZOS)
+        self.iconLendbook = Image.open('icons/givebook.png').resize(icon_size, Image.LANCZOS)
         self.iconLendbook = ImageTk.PhotoImage(self.iconLendbook)
 
         self.btnLendBook = Button(topFrame, text="Give Book", font='arial 12 bold', padx=10, image=self.iconLendbook, compound=LEFT,command=self.giveBook)
