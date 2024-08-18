@@ -35,7 +35,7 @@ class GiveBook(Toplevel):
 
         # Heading and image
         try:
-            self.top_image = PhotoImage(file='icons/addpeople.png')  # Ensure this file path is correct
+            self.top_image = PhotoImage(file='icons\\addpeople.png')  # Ensure this file path is correct
             top_image_lbl = Label(self.topFrame, image=self.top_image, bg='white')
             top_image_lbl.place(x=120, y=10)
         except Exception as e:
