@@ -81,7 +81,7 @@ def login_page():
     
     global login_photo  # Declare the variable as global before using it
     
-    login_img = Image.open("icons/code/loginpageee.png")
+    login_img = Image.open("icons\\loginpageee.png")
     login_img = login_img.resize((1000, 645))
     login_photo = ImageTk.PhotoImage(login_img)
     
@@ -106,7 +106,7 @@ def signup_page():
     
     global signup_photo  # Declare the variable as global before using it
     
-    signup_img = Image.open("icons/code/registerfinal.png")
+    signup_img = Image.open("icons\\registerfinal.png")
     signup_img = signup_img.resize((1000, 900))
     signup_photo = ImageTk.PhotoImage(signup_img)
     

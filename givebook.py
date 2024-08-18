@@ -35,7 +35,7 @@ class GiveBook(Toplevel):
 
         # Heading and image
         try:
-            self.top_image = PhotoImage(file='icons/addpeople.png')  # Ensure this file path is correct
+            self.top_image = PhotoImage(file='icons\\givebook.png')  # Ensure this file path is correct
             top_image_lbl = Label(self.topFrame, image=self.top_image, bg='white')
             top_image_lbl.place(x=120, y=10)
         except Exception as e:
@@ -43,7 +43,7 @@ class GiveBook(Toplevel):
             top_image_lbl = Label(self.topFrame, text="Image not found", bg='white')
             top_image_lbl.place(x=120, y=10)
 
-        heading = Label(self.topFrame, text='Lend Book', font='arial 22 bold', fg='#003f8a', bg='#020875')
+        heading = Label(self.topFrame, text='Lend Book', font='arial 22 bold', fg='#003f8a', bg='white')
         heading.place(x=300, y=100)
 
         # Book dropdown
